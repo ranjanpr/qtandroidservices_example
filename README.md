@@ -12,3 +12,8 @@
   In the onCreate() of my custom activity I start my custom service. However my custom service gets never created (I put a log message in the onCreate
   of my custom service and that one gets never printed out).~~ It looks like that the debugger isn't aware of the newly created service (because it's following the main application) and therefore the debug messages aren't showing up. This means, that this example is actually working! If you want to confirm that this example is also working on your smartphone, open "settings" on your Android smartphone and go to the "running applications" tab. There you should see an entry for qtandroidservices_example (Application + service)
   
+## Useful commands ##
+  adb root
+  adb shell stop
+  adb shell setprop log.redirect-stdio true
+  adb shell start

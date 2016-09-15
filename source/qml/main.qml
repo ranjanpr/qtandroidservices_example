@@ -9,8 +9,16 @@ ApplicationWindow {
     height: 600
 
     Text{
+        id: buttonText
         anchors.centerIn: parent
         text: "Hello World"
+    }
+
+    Button{
+        id: okbtn
+        text: "click me to kill"
+
+        onClicked: parent.close()
     }
 
 }

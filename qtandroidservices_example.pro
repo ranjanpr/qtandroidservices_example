@@ -35,3 +35,6 @@ android {
     ANDROID_JAVA_SOURCES.files = $$files($$PWD/source/java/*.java)
     INSTALLS += ANDROID_JAVA_SOURCES
 }
+
+FORMS += \
+    source/qml/dialog.ui
